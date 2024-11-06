@@ -30,11 +30,6 @@ vim.keymap.set("n", '<C-k>', '<C-W>k')
 vim.keymap.set("n", '<C-h>', '<C-W>h')
 vim.keymap.set("n", '<C-l>', '<C-W>l')
 
--- Add undo break-points
-vim.keymap.set("i", ",", ",<c-g>u")
-vim.keymap.set("i", ".", ".<c-g>u")
-vim.keymap.set("i", ";", ";<c-g>u")
-
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
   vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
@@ -106,9 +101,9 @@ nmap('<c-u>', '<c-u>zz')
 
 
 -- terminal mode
--- get out ouf terminal insert mode with esc
+--- get out ouf terminal insert mode with esc
 vim.keymap.set('t', '<esc>', [[<c-\><c-n>]], { silent = true, noremap = true })
---move to other window
+---move to other window
 vim.keymap.set('t', '<c-j>', [[<c-\><c-n><c-w>w]], { silent = true, noremap = true })
 vim.keymap.set('n', '<leader>j', [[<c-w>wi]], { silent = true, noremap = true })
 
