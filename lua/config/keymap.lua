@@ -183,7 +183,6 @@ wk.add(
 
 -- normal mode
 wk.add({
-    { "<c-q>", "<cmd>q<cr>", desc = "close buffer" },
     { "<cm-i>", "o```{python}<cr>```<esc>O", desc = "python code chunk" },
     { "<esc>", "<cmd>noh<cr>", desc = "remove search highlight" },
     { "<m-I>", "o```{python}<cr>```<esc>O", desc = "python code chunk" },
