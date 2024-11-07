@@ -161,6 +161,9 @@ wk.add(
     { "<leader>qp", ":!quarto preview % <cr>", desc = "preview" },
     { "<leader>qq", ":lua require'quarto'.quartoClosePreview()<cr>", desc = "close" },
 
+    { "<leader>g", group = "git"},
+    { "<leader>gl", ":tabnew term://lazygit<cr>", desc = "lazygit"},
+
     { "<leader>v", group = "vim" },
     { "<leader>vl", ":Lazy<cr>", desc = "Lazy" },
     { "<leader>vs", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k<cr>", desc = "Settings" },
