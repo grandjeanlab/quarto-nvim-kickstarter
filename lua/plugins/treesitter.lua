@@ -2,11 +2,11 @@ return {
   {
     'nvim-treesitter/nvim-treesitter',
     dev = false,
-    ---dependencies = {
-      --{
-        --'nvim-treesitter/nvim-treesitter-textobjects',
-      --},
-    --},
+    dependencies = {
+      {
+        { "nushell/tree-sitter-nu", build = ":TSUpdate" },
+      },
+    },
     run = ':TSUpdate',
     config = function()
       ---@diagnostic disable-next-line: missing-fields
@@ -22,6 +22,7 @@ return {
           'vim',
           'query',
           'vimdoc',
+          'nu',
           'mermaid'
         },
         highlight = {
