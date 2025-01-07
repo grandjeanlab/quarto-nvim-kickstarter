@@ -1,5 +1,3 @@
-
-vim.cmd.colorscheme 'catppuccin'
-local colors = require('catppuccin.palettes.frappe')
-vim.cmd.highlight { 'Tabline', 'guifg=' .. colors.green, 'guibg=' .. colors.mantle }
+vim.o.background = "dark" -- or "light" for light mode
+vim.cmd([[colorscheme gruvbox]])
 

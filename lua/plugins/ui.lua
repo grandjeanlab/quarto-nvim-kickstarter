@@ -82,7 +82,7 @@ return {
           section_separators = '',
           component_separators = '',
           globalstatus = true,
-          theme = "catppuccin",
+          theme = "gruvbox",
         },
         sections = {
           lualine_c = {
