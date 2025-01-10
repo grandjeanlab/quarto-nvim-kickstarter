@@ -58,10 +58,8 @@ end
 local function switchTheme()
   if vim.o.background == 'light' then
     vim.o.background = 'dark'
-    vim.cmd [[Catppuccin frappe]]
   else
     vim.o.background = 'light'
-    vim.cmd [[Catppuccin latte]]
   end
 end
 
